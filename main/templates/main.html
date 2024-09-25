@@ -5,8 +5,10 @@
 <title>Mental Health Tracker</title>
 {% endblock meta %}
 {% block content %}
+<h1>dawwdadwada </h1>
 {% include 'navbar.html' %}
 <div class="overflow-x-hidden px-4 md:px-8 pb-8 pt-24 min-h-screen bg-gray-100 flex flex-col">
+  
   <div class="p-2 mb-6 relative">
     <div class="relative grid grid-cols-1 z-30 md:grid-cols-3 gap-8">
       {% include "card_info.html" with title='NPM' value=npm %}
@@ -35,7 +37,7 @@
     
     {% if not mood_entries %}
     <div class="flex flex-col items-center justify-center min-h-[24rem] p-6">
-        <img src="{% static 'image/sedih-banget.jpg' %}" alt="Sad face" class="w-32 h-32 mb-4"/>
+        <img src="{% static 'image/sedih-banget.png' %}" alt="Sad face" class="w-32 h-32 mb-4"/>
         <p class="text-center text-gray-600 mt-4">Belum ada data mood pada mental health tracker.</p>
     </div>
     {% else %}
